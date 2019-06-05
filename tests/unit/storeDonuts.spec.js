@@ -1,4 +1,4 @@
-import { actions, mutations } from "@/store";
+import { actions, mutations } from "@/storeDonuts";
 import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import flushPromises from "flush-promises";
@@ -36,6 +36,6 @@ describe("mutations", () => {
   };
   it("UPDATE_PEOPLE", () => {
     UPDATE_PEOPLE(state, people);
-    expect(state.people).toBe([people]);
+    expect(state.people).toBe(people);
   });
 });
